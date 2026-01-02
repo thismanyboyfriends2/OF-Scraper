@@ -8,12 +8,14 @@ def shutdown():
     close_log.gracefulClose()
     closeThreadExecutor()
     closeCache()
+    closeThreadExecutor()
 
 
 def forcedShutDown():
     time.sleep(3)
     closeThreadExecutor()
     closeCache()
+    closeThreadExecutor()
 
 
 def closeThreadExecutor():
